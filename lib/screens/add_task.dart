@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:taskmanagement_app/utils/colors/app_colors.dart';
+import 'package:taskmanagement_app/widgets/button_widget.dart';
 import 'package:taskmanagement_app/widgets/textfield_widget.dart';
 
 class AddTask extends StatelessWidget {
@@ -41,7 +42,14 @@ class AddTask extends StatelessWidget {
                 maxLines: 3,
                 borderRadius: 15,
                 hintText: "Task detail", 
-                textController: detailController)
+                textController: detailController),
+                const SizedBox(
+                height: 20,
+              ),
+                const ButtonWidget(
+                  backgroundColor: AppColors.mainColor,
+                   text: "Add", 
+                   textColor: Colors.white)
             ],
           ),
           SizedBox(
