@@ -14,7 +14,7 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        padding: EdgeInsets.only(left: 20),
+        padding: const EdgeInsets.only(left: 20, right: 20),
         width: double.maxFinite,
         height: double.maxFinite,
         decoration: const BoxDecoration(
@@ -54,6 +54,9 @@ class _HomeScreenState extends State<HomeScreen> {
               backgroundColor: AppColors.mainColor, 
               text: 'Add Task', 
               textColor: Colors.white),
+              const SizedBox(
+                height: 20,
+              ),
             const ButtonWidget(
               backgroundColor: Colors.white, 
               text: 'View Task', 

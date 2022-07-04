@@ -1,7 +1,3 @@
-import 'dart:html';
-
-import 'package:flutter/src/foundation/key.dart';
-import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/widgets.dart';
 
 class ButtonWidget extends StatelessWidget {
@@ -15,6 +11,7 @@ class ButtonWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      alignment: Alignment.center,
       width: double.maxFinite,
       height: MediaQuery.of(context).size.height/14,
       decoration: BoxDecoration(
