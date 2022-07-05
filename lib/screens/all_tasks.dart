@@ -84,14 +84,15 @@ class AllTasks extends StatelessWidget {
               confirmDismiss: (direction)async{
                 
                 if(direction == DismissDirection.startToEnd){
-                  showModalBottomSheet(context: context, builder: (_){
-                    barrierColor: Colors.transparent;
-                     backgroundCol: Colors.transparent;
+                  showModalBottomSheet(
+                    barrierColor: Colors.transparent,
+                     backgroundColor: Colors.transparent,
+                    context: context, builder: (_){
                     return Container(
                       padding: const EdgeInsets.only(left: 20, right: 20),
                       height: 550,
                       decoration: BoxDecoration(
-                        color: const Color(0xFF2e3253).withOpacity(0.1),
+                        color: const Color(0xFF2e3253).withOpacity(0.4),
                         borderRadius: const BorderRadius.only(
                           topLeft: Radius.circular(12),
                           topRight: Radius.circular(12)
