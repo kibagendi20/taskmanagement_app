@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'package:get/get.dart';
 import 'package:taskmanagement_app/utils/colors/app_colors.dart';
 import 'package:taskmanagement_app/widgets/button_widget.dart';
 import 'package:taskmanagement_app/widgets/task_widget.dart';
@@ -43,13 +43,17 @@ class AllTasks extends StatelessWidget {
                 image: AssetImage("assets/header1.jpg")
                 )
             ),
-            child: IconButton(onPressed: (){}, icon: const Icon(Icons.arrow_back, color: AppColors.secondaryColor,)),
+            child: IconButton(onPressed: (){
+              Get.back();
+            }, icon: const Icon(Icons.arrow_back, color: AppColors.secondaryColor,)),
           ),
           Container(
             margin: const EdgeInsets.only(left: 20, right: 20),
             child: Row(
               children: [
-                IconButton(onPressed: (){}, icon: const Icon(Icons.home, size: 20, color: AppColors.secondaryColor,)),
+                IconButton(onPressed: (){
+
+                }, icon: const Icon(Icons.home, size: 20, color: AppColors.secondaryColor,)),
                 const SizedBox(
                   width: 5,
                 ),
