@@ -94,8 +94,8 @@ class AllTasks extends StatelessWidget {
                       decoration: BoxDecoration(
                         color: const Color(0xFF2e3253).withOpacity(0.4),
                         borderRadius: const BorderRadius.only(
-                          topLeft: Radius.circular(12),
-                          topRight: Radius.circular(12)
+                          topLeft: Radius.circular(20),
+                          topRight: Radius.circular(20)
                         )
                       ),
                       child: Column(
